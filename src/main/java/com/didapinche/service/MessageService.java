@@ -1,9 +1,9 @@
 package com.didapinche.service;
 
-import com.alibaba.rocketmq.common.Pair;
-import com.alibaba.rocketmq.common.message.MessageExt;
-import com.alibaba.rocketmq.common.protocol.body.ConsumeMessageDirectlyResult;
-import com.alibaba.rocketmq.tools.admin.api.MessageTrack;
+import org.apache.rocketmq.common.Pair;
+import org.apache.rocketmq.common.message.MessageExt;
+import org.apache.rocketmq.common.protocol.body.ConsumeMessageDirectlyResult;
+import org.apache.rocketmq.tools.admin.api.MessageTrack;
 import com.didapinche.model.MessageView;
 
 import java.util.List;
@@ -26,7 +26,7 @@ public interface MessageService {
     List<MessageView> queryMessageByTopicAndKey(final String topic, final String key);
 
     /**
-     * @see com.alibaba.rocketmq.tools.command.message.PrintMessageSubCommand
+     * @see org.apache.rocketmq.tools.command.message.PrintMessageSubCommand
      * @param topic
      * @param begin
      * @param end

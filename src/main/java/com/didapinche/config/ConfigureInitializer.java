@@ -1,6 +1,6 @@
 package com.didapinche.config;
 
-import com.alibaba.rocketmq.common.MixAll;
+import org.apache.rocketmq.common.MixAll;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

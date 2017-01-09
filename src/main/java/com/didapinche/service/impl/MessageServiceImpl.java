@@ -1,17 +1,17 @@
 package com.didapinche.service.impl;
 
-import com.alibaba.rocketmq.client.consumer.DefaultMQPullConsumer;
-import com.alibaba.rocketmq.client.consumer.PullResult;
-import com.alibaba.rocketmq.common.MixAll;
-import com.alibaba.rocketmq.common.Pair;
-import com.alibaba.rocketmq.common.message.MessageDecoder;
-import com.alibaba.rocketmq.common.message.MessageExt;
-import com.alibaba.rocketmq.common.message.MessageQueue;
-import com.alibaba.rocketmq.common.protocol.body.Connection;
-import com.alibaba.rocketmq.common.protocol.body.ConsumeMessageDirectlyResult;
-import com.alibaba.rocketmq.common.protocol.body.ConsumerConnection;
-import com.alibaba.rocketmq.tools.admin.MQAdminExt;
-import com.alibaba.rocketmq.tools.admin.api.MessageTrack;
+import org.apache.rocketmq.client.consumer.DefaultMQPullConsumer;
+import org.apache.rocketmq.client.consumer.PullResult;
+import org.apache.rocketmq.common.MixAll;
+import org.apache.rocketmq.common.Pair;
+import org.apache.rocketmq.common.message.MessageDecoder;
+import org.apache.rocketmq.common.message.MessageExt;
+import org.apache.rocketmq.common.message.MessageQueue;
+import org.apache.rocketmq.common.protocol.body.Connection;
+import org.apache.rocketmq.common.protocol.body.ConsumeMessageDirectlyResult;
+import org.apache.rocketmq.common.protocol.body.ConsumerConnection;
+import org.apache.rocketmq.tools.admin.MQAdminExt;
+import org.apache.rocketmq.tools.admin.api.MessageTrack;
 import com.didapinche.model.MessageView;
 import com.didapinche.service.MessageService;
 import com.google.common.base.Function;
@@ -30,7 +30,7 @@ import java.net.SocketAddress;
 import java.nio.ByteBuffer;
 import java.util.*;
 
-import static com.alibaba.rocketmq.common.message.MessageDecoder.MSG_ID_LENGTH;
+import static org.apache.rocketmq.common.message.MessageDecoder.MSG_ID_LENGTH;
 
 /**
  * Created by tangjie
@@ -42,9 +42,9 @@ public class MessageServiceImpl implements MessageService {
 
     private Logger logger = LoggerFactory.getLogger(MessageServiceImpl.class);
     /**
-     * @see com.alibaba.rocketmq.store.config.MessageStoreConfig
+     * @see org.apache.rocketmq.store.config.MessageStoreConfig
      * maxMsgsNumBatch = 64;
-     * @see com.alibaba.rocketmq.store.index.IndexService
+     * @see org.apache.rocketmq.store.index.IndexService
      * maxNum = Math.min(maxNum, this.defaultMessageStore.getMessageStoreConfig().getMaxMsgsNumBatch());
      */
     private final static int QUERY_MESSAGE_MAX_NUM = 64;//

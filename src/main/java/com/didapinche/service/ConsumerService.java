@@ -1,7 +1,7 @@
 package com.didapinche.service;
 
-import com.alibaba.rocketmq.common.protocol.body.ConsumerConnection;
-import com.alibaba.rocketmq.common.protocol.body.ConsumerRunningInfo;
+import org.apache.rocketmq.common.protocol.body.ConsumerConnection;
+import org.apache.rocketmq.common.protocol.body.ConsumerRunningInfo;
 import com.didapinche.model.ConsumerGroupRollBackStat;
 import com.didapinche.model.GroupConsumeInfo;
 import com.didapinche.model.TopicConsumerInfo;

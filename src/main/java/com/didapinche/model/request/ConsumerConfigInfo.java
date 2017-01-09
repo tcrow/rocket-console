@@ -1,6 +1,6 @@
 package com.didapinche.model.request;
 
-import com.alibaba.rocketmq.common.subscription.SubscriptionGroupConfig;
+import org.apache.rocketmq.common.subscription.SubscriptionGroupConfig;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package com.didapinche.controller;
 
-import com.alibaba.rocketmq.client.exception.MQClientException;
-import com.alibaba.rocketmq.remoting.exception.RemotingException;
+import org.apache.rocketmq.client.exception.MQClientException;
+import org.apache.rocketmq.remoting.exception.RemotingException;
 import com.didapinche.model.request.SendTopicMessageRequest;
 import com.didapinche.model.request.TopicConfigInfo;
 import com.didapinche.service.ConsumerService;

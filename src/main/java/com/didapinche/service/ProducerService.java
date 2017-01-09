@@ -1,6 +1,6 @@
 package com.didapinche.service;
 
-import com.alibaba.rocketmq.common.protocol.body.ProducerConnection;
+import org.apache.rocketmq.common.protocol.body.ProducerConnection;
 
 /**
  * Created by tangjie

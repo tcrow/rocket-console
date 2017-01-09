@@ -1,8 +1,8 @@
 package com.didapinche.controller;
 
-import com.alibaba.rocketmq.common.Pair;
-import com.alibaba.rocketmq.common.protocol.body.ConsumeMessageDirectlyResult;
-import com.alibaba.rocketmq.tools.admin.api.MessageTrack;
+import org.apache.rocketmq.common.Pair;
+import org.apache.rocketmq.common.protocol.body.ConsumeMessageDirectlyResult;
+import org.apache.rocketmq.tools.admin.api.MessageTrack;
 import com.didapinche.model.MessageView;
 import com.didapinche.service.MessageService;
 import com.didapinche.support.annotation.JsonBody;

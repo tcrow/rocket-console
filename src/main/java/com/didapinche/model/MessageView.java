@@ -1,6 +1,6 @@
 package com.didapinche.model;
 
-import com.alibaba.rocketmq.common.message.MessageExt;
+import org.apache.rocketmq.common.message.MessageExt;
 import com.google.common.base.Charsets;
 import org.springframework.beans.BeanUtils;
 
