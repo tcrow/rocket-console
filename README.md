@@ -27,3 +27,6 @@
 [https://github.com/apache/incubator-rocketmq](https://github.com/apache/incubator-rocketmq)  
 下载后执行命令 `mvn install`  
 
+* 国际化如何处理？  
+国际化首先需要增加导入一个js文件然后定义国际化的相应变量，本项目文件在/src/i18n/文件夹下，然后页面上使用angular-translate的过滤器处理需要国际化的文本，使用方法非常简单直接{{ TRANSLATION_ID | translate }}即可，更详细的说明可以参考如下链接：  
+[https://angular-translate.github.io/docs/zh-cn/#/guide/](https://angular-translate.github.io/docs/zh-cn/#/guide/)  
