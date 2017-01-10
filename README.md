@@ -22,8 +22,8 @@
 * Config相关的功能没有（namesvr/broker）
 
 ##### Q&A
-* 缺少rocketmq-tools包如何解决？
-下载rocketmq源代码打包安装，源码下载地址：
-[https://github.com/apache/incubator-rocketmq](https://github.com/apache/incubator-rocketmq)
-下载后执行命令 `mvn install`
+* 缺少rocketmq-tools包如何解决？  
+下载rocketmq源代码打包安装，源码下载地址：  
+[https://github.com/apache/incubator-rocketmq](https://github.com/apache/incubator-rocketmq)  
+下载后执行命令 `mvn install`  
 
