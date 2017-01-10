@@ -1,4 +1,4 @@
-## 嘀嗒拼车基于rocketmq-tools 3.5.8版本开发的一个RocketMQ console
+## 嘀嗒拼车基于rocketmq-tools 4.0.0版本开发的一个RocketMQ console
 
 #### 为了方便阅读，增加一些说明
 * 0.采用的是spring + bootstrap + angularjs
