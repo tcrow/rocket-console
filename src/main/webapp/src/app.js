@@ -5,7 +5,8 @@
 var app = angular.module('app', [
     'ngAnimate',
     'ngCookies',
-    'ngRoute'
+    'ngRoute',
+    'pascalprecht.translate'
 ]).run(
         ['$rootScope','$location','$cookies',
             function ($rootScope,$location,$cookies) {
@@ -106,8 +107,8 @@ app.provider('getDictName', function () {
     }
 })
 
-app.config(['$routeProvider', '$httpProvider','$cookiesProvider','getDictNameProvider','$sceProvider',
-    function ($routeProvider, $httpProvider ,$cookiesProvider,getDictNameProvider,$sceProvider) {
+app.config(['$routeProvider', '$httpProvider','$cookiesProvider','getDictNameProvider','$sceProvider','$translateProvider',
+    function ($routeProvider, $httpProvider ,$cookiesProvider,getDictNameProvider,$sceProvider,$translateProvider) {
         //关闭html校验，存在安全隐患，但目前没问题，使用ng-bind-html需要注意，防止跨站攻击
         $sceProvider.enabled(false);
         //前端字典项目初始化
@@ -231,6 +232,12 @@ app.config(['$routeProvider', '$httpProvider','$cookiesProvider','getDictNamePro
         }).when('/404', {
             templateUrl: '/404'
         }).otherwise('/404');
+
+        $translateProvider.translations('en',en);
+        $translateProvider.translations('zh',zh);
+        $translateProvider.preferredLanguage('en');
+        $translateProvider.useCookieStorage();
+
     }]);
 
 app.filter('range', function() {
