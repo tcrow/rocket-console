@@ -13,3 +13,4 @@ hs_err_pid*
 /.idea/
 /target/
 /rocketmq_console.iml
+/rocketmq-console.iml
